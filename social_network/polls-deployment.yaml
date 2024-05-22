@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: django
-          image: django-docker:0.0.1
+          image: cr.yandex/crp4aemrccnp23rjtb3b/django-docker:0.0.2
           ports:
             - containerPort: 8000
           command: ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
